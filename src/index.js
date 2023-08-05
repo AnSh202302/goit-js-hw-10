@@ -62,6 +62,8 @@ function renderCat(url, breeds) {
 function hendlerErrore(err) {
   loaderEl.classList.add('is-hidden');
   errorEl.classList.remove('is-hidden');
+  infoCatEl.classList.add('is-hidden');
+
   Notiflix.Notify.failure(`${errorEl.textContent}`, {
     position: 'center-center',
   });
